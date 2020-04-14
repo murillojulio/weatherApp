@@ -54,7 +54,7 @@ class WeatherLocation extends Component{
         <div className="weatherLocationCont">
             <Location city={city}></Location>
             { data_ ? <WeatherData data={data_}></WeatherData> : <CircularProgress size={50} /> }
-            <Button variant={`outlined`} color={`primary`} onClick={this.handleUpdateClick}>ACTUALIZAR</Button>
+            <Button variant={`outlined`} color={`primary`} onClick={this.handleUpdateClick}>CONSULTAR</Button>
             {/* 
             El problema surge al hace lo siguiente:
             onClick={MiFuncion()} o onClick={MiFuncion(parametro)}
